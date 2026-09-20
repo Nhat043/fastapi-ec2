@@ -2,6 +2,10 @@
 
 Starter API ready to run manually on an AWS EC2 instance. It includes a Docker image, Compose configuration, a health endpoint, environment-based CORS, and an Nginx reverse-proxy template.
 
+## Infrastructure as code
+
+The AWS CDK TypeScript stack is in [`infra/`](infra/README.md). It creates the VPC, public subnet, security group, EC2 instance, and the same Nginx/systemd deployment automatically.
+
 ## Run locally
 
 ```bash
